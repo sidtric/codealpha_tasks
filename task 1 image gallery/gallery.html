@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <h1>My Image Gallery</h1>
+    </header>
+
+    <section class="gallery">
+        <div class="image-container">
+            
+            <img src="images/img1.jpg" alt="Gallery Image1" onclick="openLightbox(this)">
+            <img src="images/img2.jpg" alt="Gallery Image2" onclick="openLightbox(this)">
+            <img src="images/img3.jpg" alt="Gallery Image3" onclick="openLightbox(this)">
+            <img src="images/img4.jpg" alt="Gallery Image4" onclick="openLightbox(this)">
+            <img src="images/img5.jpg" alt="Gallery Image3" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class = "close" onclick="closelightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img"/>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="gallery.js"></script>
+
+
+    
+</body>
+</html>
